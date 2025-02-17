@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(to left, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+}
+
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro, 
+.about,
+.projects,
+.skills,
+.contact{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 224, 224, 0.3)
+    );
+
+    backdrop-filter: blur(1em);
+    width: 50%;
+    height: fit-content;
+    padding: 2em;
+    border-radius: 3em;
+}
+
+.intro, .skills{
+    margin-right: 50%;
+    margin-bottom: 10%;
+    width: 35%;
+}
+
+.contact, .about{
+    margin-left: 50%;
+    width: 35%;
+}
+
+.intro h2{
+    margin-top: 1em;
+    font-weight: lighter;
+}
+
+.intro h3{
+    margin-top: 0.5em;
+    font-weight: lighter;
+}
+
+span{
+    font-weight: 750;
+}
+
+h4{
+    margin-top: 2em;
+    font-weight: lighter;
+}
+
+li{
+    margin-top: 1.7em;
+}
+
+ul{
+    list-style-type: none;
+}

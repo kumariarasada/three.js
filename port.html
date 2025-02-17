@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio</title>
+  <link rel="stylesheet" href="ports.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    canvas.webgl {
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: -1;
+    }
+
+    div.btns {
+      position: absolute;
+      z-index: 2;
+      display: none;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="btns">
+    <button id="prev-view">prev view</button>
+    <button id="next-view">next view</button>
+  </div>
+
+  <canvas class="webgl"></canvas>
+  <main>
+    <!-- Intro section/view -->
+    <div class="intro-container container">
+      <div class="intro">
+        <h1>
+          Hello!
+          <img src="https://bchiang7.github.io/img/emojis/wave.png" alt="hand-wave-emoji" height="35px" width="35px">
+        </h1>
+        <h2>
+          I'm <span>Kumari Arasada</span>
+        </h2>
+        <h3>
+          This is my introduction💻
+          I am the student of Electronics and communication Engineering and enthuastic to learn software technologies
+        </h3>
+      </div>
+    </div>
+
+    <!-- About container -->
+    <div class="about-container container">
+      <div class="about">
+        <h2>
+          Background 🌐
+        </h2>
+        <h4>
+          <!-- THIS IS ANOTHER SECTION. Use span to bold words. <span>Like this</span> -->
+          I am a front end developer intrested to develop front end pages using the technologies like HTML , CSS, JAVASCRIPT
+      
+        </h4>
+      </div>
+    </div>
+
+    <!-- Project container -->
+    <div class="project-container container">
+      <div class="projects">
+        <h2>
+          Projects 🏆
+        </h2>
+
+        <h4>
+          THIS IS THE LIST OF PROJECTS.
+          <ul>
+            <li>E-Commerece website</li>
+            <li>portfolio</li>
+            <li>Image Gallery</li>
+            <li>Random Quote Generator</li>
+          </ul>
+        </h4>
+      </div>
+    </div>
+
+    <!-- Skills container -->
+    <div class="skills-container container">
+      <div class="skills">
+        <h2>
+          Skills 🧠
+        </h2>
+
+        <h4>
+          THIS IS THE LIST OF SKILLS.
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>Web Development</li>
+          </ul>
+        </h4>
+      </div>
+    </div>
+
+    <!-- Contact container -->
+    <div class="contact-container container">
+      <div class="contact">
+        <h2>
+          Contacts ☎️
+        </h2>
+
+        <h4>
+          <ul>
+            <li>6305xxxxx</li>
+            <li>94943xxxx</li>
+            <li>93280xxxx</li>
+            <li>6789xxxxx</li>
+          </ul>
+        </h4>
+      </div>
+    </div>
+
+  </main>
+
+ 
+
+  <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+          }
+        }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lil-gui@VERSION"></script>
+  <script src="portfolio.js" type="module"></script>
+</body>
+
+</html>
